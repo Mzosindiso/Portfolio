@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <svg width="100" height="50" viewBox="0 0 100 50">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                    </defs>
+                    <g filter="url(#goo)">
+                        <circle cx="100" cy="25" r="20" fill="url(#gradient)">
+                            <animate attributeName="cx" values="50;55;50;45;50" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="cy" values="25;20;25;30;25" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="100" cy="30" r="15" fill="white">
+                            <animate attributeName="cx" values="50;45;50;55;50" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="cy" values="25;30;25;20;25" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <text x="50" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6366F1" text-anchor="middle">T.N</text>
+                    </g>
+                </svg>
+            </div>    
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Thina Nontwabaza</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+            <img src="images/thina.jpg" alt="a picture of Thina" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="fas fa-desktop service-icon"></i>
+                    <h3>UI Design + Web Development</h3>
+                    <p>I specialize in creating visually appealing and user-friendly interfaces, combined with robust web development. From responsive layouts to interactive features, I craft seamless digital experiences using HTML, CSS, and JavaScript. My expertise extends to modern frameworks like React, ensuring dynamic and efficient web applications that meet both user needs and business objectives.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fas fa-hands-helping service-icon"></i>
+                    <h3>Volunteering & Community Engagement</h3>
+                    <p>I'm passionate about giving back to the community and making a positive impact. Through various volunteering initiatives, I've contributed to local tech education programs, participated in coding workshops for underserved youth, and supported community-driven projects. This experience has not only enhanced my leadership and communication skills but also reinforced my belief in technology as a tool for social good.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fas fa-database service-icon"></i>
+                    <h3>Backend Development & Database Management</h3>
+                    <p>I excel in creating robust server-side applications and APIs using Node.js and Express. My expertise extends to database design and management, working with both SQL (MySQL) and NoSQL (MongoDB) databases. I implement secure authentication systems, optimize database queries, and ensure scalable architectures. Additionally, I have experience with PHP, further broadening my backend capabilities. My focus is on creating efficient, secure, and maintainable backend systems that power modern web applications.</p>
+                </div>
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- My Skills -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                
+            </div>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Fullstack developer</p>
+            
+            <div class="about-me__body">
+                <p>I'm Thina Nontwabaza, a passionate and dedicated full-stack developer who strives for excellence in everything I do. With a foundation built on humility, kindness, and honesty, I approach both my personal and professional life with integrity and enthusiasm.</p>
+                <p>My educational journey includes a matric certificate with a bachelor pass, an N4 qualification, and a Higher Certificate in ICT. I'm currently expanding my skills through an exciting learnership program with ABSA, which is providing me with valuable industry experience.</p>
+                <p>As a developer, I'm proficient in a variety of programming languages including Java, Python, JavaScript, HTML, and CSS. I'm also experienced with React for building dynamic user interfaces. On the backend, I work with Node.js and Express, and I'm comfortable with database technologies such as MongoDB and MySQL. Additionally, I have knowledge of PHP, further broadening my full-stack capabilities.</p>
+                <p>I'm always eager to learn and grow, embracing new challenges as opportunities for development. My goal is to contribute meaningfully to innovative projects while continuously improving my skills in the ever-evolving world of technology.</p>
+            </div>
+            <img src="" alt="#" class="about-me__img">
+        </section>
+
+         <!-- Skills -->
+         <section class="skills" id="skills">
+             <h2 class="section__title section__title--skills">My Skills</h2>
+             <p class="section__subtitle section__subtitle--skills">Some of my proficiencies</p>
+             <div class="skills-grid">
+                 <div class="skill">
+                     <h3 class="skill__title">HTML5</h3>
+                     <i class="fab fa-html5 skill__icon"></i>
+                     <div class="skill__bar" data-progress="90%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">CSS</h3>
+                     <i class="fab fa-css3-alt skill__icon"></i>
+                     <div class="skill__bar" data-progress="85%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">JavaScript</h3>
+                     <i class="fab fa-js-square skill__icon"></i>
+                     <div class="skill__bar" data-progress="70%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">React</h3>
+                     <i class="fab fa-react skill__icon"></i>
+                     <div class="skill__bar" data-progress="60%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">Node.js</h3>
+                     <i class="fab fa-node-js skill__icon"></i>
+                     <div class="skill__bar" data-progress="74%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">PHP</h3>
+                     <i class="fab fa-php skill__icon"></i>
+                     <div class="skill__bar" data-progress="70%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">Python</h3>
+                     <i class="fab fa-python skill__icon"></i>
+                     <div class="skill__bar" data-progress="65%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">MySQL</h3>
+                     <i class="fas fa-database skill__icon"></i>
+                     <div class="skill__bar" data-progress="66%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+                 <div class="skill">
+                     <h3 class="skill__title">Java</h3>
+                     <i class="fab fa-java skill__icon"></i>
+                     <div class="skill__bar" data-progress="70%">
+                         <div class="skill__bar-inner"></div>
+                     </div>
+                 </div>
+             </div>
+            <br>
+             <div class="certificates">
+                 <h3 class="certificates__title">Certifications</h3>
+                 <div class="certificates-carousel">
+                     <div class="certificates__list">
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Software Project Management Foundations</h4>
+                            <p class="certificate__subtitle">Mar 30, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Software Project Management Foundations.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                         <div class="certificate__item">
+                             <h4 class="certificate__title">Advanced Design Patterns Design Principles</h4>
+                             <p class="certificate__subtitle">Feb 19, 2022</p>
+                             <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Advanced Design Patterns Design Principles.pdf">
+                                 <i class="fas fa-eye"></i> View Certificate
+                             </button>
+                         </div>
+                         <div class="certificate__item">
+                             <h4 class="certificate__title">Construction Management Planning and Scheduling</h4>
+                             <p class="certificate__subtitle">April 29, 2022</p>
+                             <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Construction Management Planning and Scheduling_2.pdf">
+                                 <i class="fas fa-eye"></i> View Certificate
+                             </button>
+                         </div>
+                         <div class="certificate__item">
+                             <h4 class="certificate__title">Creating a Business Plan</h4>
+                             <p class="certificate__subtitle">April 19, 2022</p>
+                             <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Creating a Business Plan_2.pdf">
+                                 <i class="fas fa-eye"></i> View Certificate
+                             </button>
+                         </div>
+                         <div class="certificate__item">
+                            <h4 class="certificate__title">How Blockchains Will Change Business</h4>
+                            <p class="certificate__subtitle">May 10, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_How Blockchains Will Change Business_2.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Introducing the PMBOK GuideSeventh Edition</h4>
+                            <p class="certificate__subtitle">Feb 20, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Introducing the PMBOK GuideSeventh Edition_2.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Leading Projects</h4>
+                            <p class="certificate__subtitle">May 25, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Leading Projects.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Project Management Foundations: Schedules</h4>
+                            <p class="certificate__subtitle">April 21, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Project Management Foundations Schedules.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Project Management: Technical Projects</h4>
+                            <p class="certificate__subtitle">Mar 03, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Project Management Technical Projects_2.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="certificate__item">
+                            <h4 class="certificate__title">Project Resource Management</h4>
+                            <p class="certificate__subtitle">May 25, 2022</p>
+                            <button class="btn btn-view-certificate" data-pdf="images/certificates/CertificateOfCompletion_Project Resource Management.pdf">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                     </div>
+                 </div>
+                 <button class="carousel-btn prev" aria-label="Previous certificate">
+                     <i class="fas fa-chevron-left"></i>
+                 </button>
+                 <button class="carousel-btn next" aria-label="Next certificate">
+                     <i class="fas fa-chevron-right"></i>
+                 </button>
+             </div>
+            
+            <!-- Certificate Popup -->
+            <div id="certificate-popup" class="certificate-popup">
+                <div class="certificate-popup-content">
+                    <button id="close-popup" class="close-popup">Close certificate</button>
+                    <iframe id="certificate-frame" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+         </section>
+        
+        <!-- Contact me -->
+         <section class="contact-me" id="contact">
+            <h2 class="section__title section__title--contact">Contact me</h2>
+            <p class="section__subtitle section__subtitle--contact">Get in touch</p>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <script src="js/index.js"></script>
+    </body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Thina Nontwabaza</h3>
+                    <p class="footer__subtitle">Full-stack Developer</p>
+                    <a href="mailto:thina.nontwabaza@capaciti.org.za" class="footer__link">thina.nontwabaza@capaciti.org.za</a>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__social-title">Connect with me</h4>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="https://linkedin.com/in/thina-nontwabaza" class="social-list__link social-list__link--linkedin" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://wa.me/+27691250244" class="social-list__link social-list__link--whatsapp" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://github.com/Mzosindiso" class="social-list__link social-list__link--github" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 Thina Nontwabaza. All rights reserved.</p>
+            </div>
+        </footer>
+</html>
