@@ -67,3 +67,10 @@ Thina Nontwabaza - [thina.nontwabaza@capaciti.org.za](mailto:thina.nontwabaza@ca
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
+=======
+# Getting Started
+Install the dependencies and run the project
+```
+npm install
+npm start
+```
