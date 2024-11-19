@@ -300,7 +300,23 @@ header {
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
 
+.bounce-text {
+    display: inline-block;
+    animation: bounce 2s ease;
+    animation-delay: calc(var(--item-number) * 0.1s);
+}
 
 /*  My services section  */
 
@@ -758,6 +774,22 @@ header {
 .contact-form .iti__tel-input {
     width: 100%;
     padding-left: 90px !important;
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
 }
 
 /* footer */

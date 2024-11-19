@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- line for the favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
@@ -56,9 +61,9 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Thina Nontwabaza</strong>
+                <span class="bounce-text">Hi,</span> <span class="bounce-text">I</span> <span class="bounce-text">am</span> <strong class="bounce-text">Thina Nontwabaza</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+            <p class="section__subtitle section__subtitle--intro"><span class="bounce-text">full-stack</span> <span class="bounce-text">dev</span></p>
             <img src="images/thina.jpg" alt="a picture of Thina" class="intro__img">
         </section>
 
@@ -94,7 +99,12 @@
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
             <div class="portfolio">
-                
+                <img src="" alt="#" class="portfolio__img">
+                <div class="portfolio__details">
+                    <h3 class="portfolio__title">SPA</h3>
+                    <p class="portfolio__subtitle">Technology Stack: HTML & CSS, JavaScript, React</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
         </section>
 
@@ -276,10 +286,10 @@
          </section>
         
         <!-- Contact me -->
-         <section class="contact-me" id="contact">
+        <section class="contact-me" id="contact">
             <h2 class="section__title section__title--contact">Contact me</h2>
             <p class="section__subtitle section__subtitle--contact">Get in touch</p>
-            <form class="contact-form" action="#" method="post">
+            <form id="contactForm" class="contact-form" action="https://formbold.com/s/oD20M" method="POST">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Name" required>
                 </div>
@@ -294,6 +304,11 @@
                 </div>
                 <button type="submit" class="btn">Send Message</button>
             </form>
+            <div id="successPopup" class="popup">
+                <div class="popup-content">
+                    <p>Message sent successfully!</p>
+                </div>
+            </div>
         </section>
         <script src="js/index.js"></script>
     </body>
@@ -327,7 +342,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2023 Thina Nontwabaza. All rights reserved.</p>
+                <p>&copy; 2024 Thina Nontwabaza. All rights reserved.</p>
             </div>
         </footer>
 </html>

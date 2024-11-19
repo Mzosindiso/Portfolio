@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "react-router-dom": "^6.28.0",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }

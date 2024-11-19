@@ -1,19 +1,69 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Thina Nontwabaza's Portfolio
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+## Description
+This project is a personal portfolio website for Thina Nontwabaza, a full-stack developer, built using React. It showcases Thina's skills, projects, and professional experience in web development.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
+- Single Page Application (SPA) built with React
+- Responsive design
+- Interactive UI elements
+- Skills showcase with progress bars
+- Project portfolio
+- Certificate carousel
+- Contact form
+- Social media links
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Technologies Used
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Font Awesome for icons
+- Google Fonts
+- Vite as the build tool
 
-Happy Coding!
+## Prerequisites
+- Node.js (v14 or later)
+- npm (v6 or later)
+
+## Setup
+1. Clone the repository: `git clone`
+2. Navigate to the project directory
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and visit `http://localhost:3000`
+
+## Available Scripts
+- `npm run dev`: Starts the development server
+- `npm run build`: Builds the app for production
+- `npm run preview`: Locally preview the production build
+
+## Project Structure
+- `src/`: Source files
+  - `components/`: React components
+  - `styles/`: CSS files
+  - `assets/`: Images and other static files
+- `public/`: Public assets
+- `index.html`: Entry HTML file
+- `vite.config.js`: Vite configuration
+
+## Sections
+1. Header with navigation
+2. Introduction
+3. Services/What I do
+4. Skills
+5. About me
+6. Projects
+7. Certifications
+8. Contact form
+9. Footer with social links
+
+## Contact
+Thina Nontwabaza - [thina.nontwabaza@capaciti.org.za](mailto:thina.nontwabaza@capaciti.org.za)
+
+## Social Links
+- [LinkedIn](https://linkedin.com/in/thina-nontwabaza)
+- [GitHub](https://github.com/Mzosindiso)
+
+## License
+This project is open source and available under the [MIT License](LICENSE).

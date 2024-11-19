@@ -75,3 +75,73 @@ document.addEventListener('DOMContentLoaded', function() {
         certificateFrame.src = '';
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const bounceElements = document.querySelectorAll('.bounce-text');
+    bounceElements.forEach((element, index) => {
+        element.style.setProperty('--item-number', index);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const successPopup = document.getElementById('successPopup');
+    let lastSubmissionTime = 0;
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Check if 10 seconds have passed since the last submission
+        const currentTime = Date.now();
+        if (currentTime - lastSubmissionTime < 10000) {
+            alert('Please wait 10 seconds before submitting another message.');
+            return;
+        }
+
+        // Basic form validation
+        const name = form.elements['name'].value.trim();
+        const email = form.elements['email'].value.trim();
+        const phone = form.elements['phone'].value.trim();
+        const message = form.elements['message'].value.trim();
+
+        if (!name || !email || !phone || !message) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Send form data to FormBold
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                showSuccessPopup();
+                lastSubmissionTime = currentTime;
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        });
+    });
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function showSuccessPopup() {
+        successPopup.style.display = 'block';
+        setTimeout(() => {
+            successPopup.style.display = 'none';
+        }, 3000);
+    }
+});
