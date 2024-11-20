@@ -63,10 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Popup functionality
     document.querySelectorAll('.btn-view-certificate').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
             const pdfUrl = this.getAttribute('data-pdf');
             certificateFrame.src = pdfUrl;
             popup.style.display = 'block';
+            console.log('Opening certificate:', pdfUrl); // For debugging
         });
     });
 

@@ -11,3 +11,8 @@
   for = "/*.pdf"
   [headers.values]
     Content-Type = "application/pdf"
+
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
