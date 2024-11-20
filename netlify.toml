@@ -6,5 +6,4 @@
   from = "/*"
   to = "/index.html"
   status = 200git add .
-git commit -m "Updated configuration for Netlify deployment"
-git push
+
