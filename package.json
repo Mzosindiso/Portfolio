@@ -1,14 +1,11 @@
 {
-  "name": "Thina Nontwabaza",
-  "description": "",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
+    "vercel-build": "npm install && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-router-dom": "^6.28.0",
-    "vite": "latest"
+    "vite": "^4.3.9"
   }
 }
