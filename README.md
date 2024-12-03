@@ -3,6 +3,9 @@
 ## Description
 This project is a personal portfolio website for Thina Nontwabaza, a full-stack developer, built using React. It showcases Thina's skills, projects, and professional experience in web development.
 
+## Live Demo
+You can view the live version of this portfolio at: [https://thinanontwabaza.netlify.app/](https://thinanontwabaza.netlify.app/)
+
 ## Features
 - Single Page Application (SPA) built with React
 - Responsive design
@@ -58,19 +61,15 @@ This project is a personal portfolio website for Thina Nontwabaza, a full-stack 
 8. Contact form
 9. Footer with social links
 
-## Contact
-Thina Nontwabaza - [thina.nontwabaza@capaciti.org.za](mailto:thina.nontwabaza@capaciti.org.za)
-
 ## Social Links
 - [LinkedIn](https://linkedin.com/in/thina-nontwabaza)
 - [GitHub](https://github.com/Mzosindiso)
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
-=======
-# Getting Started
+
+## Getting Started
 Install the dependencies and run the project
-```
+```bash
 npm install
 npm start
-```
